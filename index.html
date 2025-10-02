@@ -7,62 +7,42 @@
     <!-- Importando o CSS do Bootstrap (framework que facilita a criação de layouts responsivos e estilizados) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Link para um CSS externo personalizado -->
-    <link href="styles.css"  rel="stylesheet">
+  <link href="assets/css/styles.css"  rel="stylesheet">
 
 </head>
 <!-- ---------------------------------------------------------------- -->
 <body class="d-flex flex-column min-vh-100">
-    <!-- ---------- NAVBAR (MENU DE NAVEGAÇÃO) ---------- -->
-  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #ed8b3b; padding-top: 1rem; padding-bottom: 1rem;">
-    <div class="container d-flex align-items-center justify-content-between position-relative" style="min-height: 50px;">
-      <!-- Title on the left -->
-      <a class="navbar-brand d-flex align-items-center" href="#" style="font-size: 2rem; font-weight: bold; z-index:2;">Joel Salvador</a>
+    <!-- ---------- HEADER ---------- -->
+  <div id="header"></div>
 
-      <!-- Logo centered absolutely -->
-      <img src="assets/images/LOGO_PNG2.png" alt="Logo" style="height: 80px; width: auto; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index:1;">
-
-      <!-- Nav links on the right -->
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav" style="z-index:2;">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="portfolio.html">Portfolio</a></li>
-        </ul>
-      </div>
-
-      <!-- Hamburger for mobile -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="z-index:2;">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-  </nav>
 
   <!-- ---------- MAIN CONTENT ---------- -->
+  <main style="flex: 1 0 auto;">
 
-  <div class = "container">  
+    <div class = "container">  
 
-    <div class = "col"> <!-- Left Column -->
-      <h2>About Me</h2>
-      <p>Welcome to my portfolio website!</p>
+      <div class = "col"> <!-- Left Column -->
+        <h2>About Me</h2>
+        <p>Welcome to my portfolio website!</p>
+      </div>
+
+      <div class = "col"> <!-- Right Column -->
+        <h2>Contacts</h2>
+        <p>Here you can find my contact information.</p>
+        <p>Email: joelsalvador@gmail.com</p>
+      </div>
+
     </div>
 
-    <div class = "col"> <!-- Right Column -->
-      <h2>Contacts</h2>
-      <p>Here you can find my contact information.</p>
-      <p>Email: joelsalvador@gmail.com</p>
-    </div>
-
-  </div>
+  </main>
 
   <!-- ---------- FOOTER ---------- -->
-    <footer class="text-white text-center py-3 mt-auto" style="background-color: #ed8b3b;">
-    <p class="mb-0">&copy; 2025 Joel Salvador</p>
-    <a href="https://www.linkedin.com/in/joel-salvador-972a82266/" class="text-white">LinkedIn</a>
-  </footer>
+  <div id="footer"></div>
 
-
-  <!-- Importando o JS do Bootstrap (necessário para menus e componentes interativos) -->
+  <!-- JS -->
+  <script src="assets/js/components.js"></script>
+  <!-- Bootstrap JS (necessário para menus e componentes interativos) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 
 
